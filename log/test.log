@@ -1,0 +1,99 @@
+Unable to load user, underlying cause no such file to load -- user 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:155:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:262:in `require_or_load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:221:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:133:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:856:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:871:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:868:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:851:in `fixtures'
+./test/test_helper.rb:35
+./test/unit/snippet_test.rb:1:in `require'
+./test/unit/snippet_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5:in `load'
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5
+Unable to load user, underlying cause no such file to load -- user 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:155:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:262:in `require_or_load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:221:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:133:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:856:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:871:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:868:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/fixtures.rb:851:in `fixtures'
+./test/test_helper.rb:35
+./test/functional/snippets_controller_test.rb:1:in `require'
+./test/functional/snippets_controller_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5:in `load'
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.8.3/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "snippets" [0m
+
+
+Processing SnippetsController#create (for 0.0.0.0 at 2009-01-15 18:26:58) [POST]
+  Parameters: {"snippet"=>{}}
+  [4;35;1mSnippet Create (0.5ms)[0m   [0mINSERT INTO "snippets" ("user", "updated_at", "title", "contents", "created_at") VALUES(NULL, '2009-01-15 23:26:58', NULL, NULL, '2009-01-15 23:26:58')[0m
+Redirected to #<Snippet:0x22734d4>
+Completed in 7ms (DB: 2) | 302 Found [http://test.host/snippets?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "snippets" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "snippets" [0m
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+
+
+Processing SnippetsController#destroy (for 0.0.0.0 at 2009-01-15 18:26:58) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mSnippet Load (0.3ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+  [4;36;1mSnippet Destroy (0.2ms)[0m   [0;1mDELETE FROM "snippets" WHERE "id" = 953125641[0m
+Redirected to http://test.host/snippets
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/snippets/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "snippets" [0m
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+
+
+Processing SnippetsController#edit (for 0.0.0.0 at 2009-01-15 18:26:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+Rendering template within layouts/snippets
+Rendering snippets/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/snippets/953125641/edit]
+
+
+Processing SnippetsController#index (for 0.0.0.0 at 2009-01-15 18:26:58) [GET]
+  [4;36;1mSnippet Load (0.3ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/snippets
+Rendering snippets/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/snippets]
+
+
+Processing SnippetsController#new (for 0.0.0.0 at 2009-01-15 18:26:58) [GET]
+Rendering template within layouts/snippets
+Rendering snippets/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/snippets/new]
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+
+
+Processing SnippetsController#show (for 0.0.0.0 at 2009-01-15 18:26:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+Rendering template within layouts/snippets
+Rendering snippets/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/snippets/953125641]
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+
+
+Processing SnippetsController#update (for 0.0.0.0 at 2009-01-15 18:26:58) [PUT]
+  Parameters: {"id"=>"953125641", "snippet"=>{}}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."id" = 953125641) [0m
+Redirected to #<Snippet:0x221d2dc>
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/snippets/953125641?]

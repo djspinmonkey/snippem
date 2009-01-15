@@ -1,0 +1,11 @@
+<% @snippets.each do |s| %>
+
+  User: <%= s.user %> <br>
+  Date: <%= s.created_at %> <br>
+  Title: <%= s.title %> <br>
+
+  <p> <%= s.contents %> </p>
+
+  <hr>
+
+<% end %>

@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @snippet.user %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @snippet.title %>
+</p>
+
+<p>
+  <b>Contents:</b>
+  <%=h @snippet.contents %>
+</p>
+
+
+<%= link_to 'Edit', edit_snippet_path(@snippet) %> |
+<%= link_to 'Back', snippets_path %>
