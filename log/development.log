@@ -1209,3 +1209,73 @@ Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:39:32) [GET]
   [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
 Rendering users/show
 Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:41:18) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:41:20) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:42:06) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:42:21) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:42:47) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:43:14) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:43:21) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.2ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:43:51) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.2ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 18:45:53) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
