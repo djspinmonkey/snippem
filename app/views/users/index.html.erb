@@ -1,0 +1,7 @@
+<h1> Snippet Blogs </h1>
+
+<ul>
+<% @users.each do |u| %>
+  <li> <%= link_to u, "/users/#{u}" %> </li>
+<% end %>
+</ul>
