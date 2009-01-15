@@ -1,11 +1,11 @@
+<h1>Snippets for <%= @user %></h1>
+
 <% @snippets.each do |s| %>
+  <% div_for(s) do %>
+    Date: <%= s.created_at %> <br>
+    Title: <%= s.title %> <br>
 
-  User: <%= s.user %> <br>
-  Date: <%= s.created_at %> <br>
-  Title: <%= s.title %> <br>
-
-  <p> <%= s.contents %> </p>
-
-  <hr>
+    <p> <%= s.contents %> </p>
+  <% end %>
 
 <% end %>
