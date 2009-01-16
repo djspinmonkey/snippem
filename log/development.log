@@ -2729,3 +2729,18 @@ Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:57:17) [GET]
 Rendering template within layouts/application
 Rendering users/index
 Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:58:14) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-16 10:06:39) [GET]
+  [4;36;1mSnippet Load (0.9ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
