@@ -20,7 +20,7 @@ imap.select('INBOX')
 imap.search(["NOT", "DELETED"]).each do |message_id|
   email = TMail::Mail.parse(imap.fetch(message_id, "RFC822")[0].attr["RFC822"])
   user = email.from[0].sub(/@xiocom.com/, '')
-  body = mail.multipart? ? mail.parts.first.body : mail.body
+  body = email.multipart? ? email.parts.first.body : email.body
   snippet = Snippet.new(:user => user, :title => email.subject, :contents => body)
   snippet.save()
   imap.store(message_id, "+FLAGS", [:Deleted])
