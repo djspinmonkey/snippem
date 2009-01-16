@@ -1883,3 +1883,849 @@ Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:07:23) [GET]
 Rendering template within layouts/application
 Rendering users/show
 Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:26:19) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (1.1ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-15 19:26:19) [GET]
+
+
+ActionController::RoutingError (No route matches "/public/images/logo_extended.gif" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:26:27) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:26:51) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:27:06) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:27:19) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:27:45) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:28:40) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.8ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:28:55) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 68ms (View: 63, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:35:39) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:35:40) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:35:45) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:35:50) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:35:53) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:37:48) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:37:56) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:02) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:06) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:16) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.8ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 68ms (View: 62, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:23) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:37) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:44) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (1.1ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:38:54) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:39:03) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:39:08) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:39:18) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:39:30) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:39:37) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:40:06) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.8ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 67ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:40:15) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:40:23) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:41:24) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:41:35) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:42:16) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:42:47) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.9ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:43:56) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:44:01) [GET]
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 88ms (View: 83, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:44:03) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:44:05) [GET]
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:44:06) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:44:47) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:46:16) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+ERROR: compiling _run_erb_app47views47users47show46html46erb RAISED compile error
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:1: syntax error, unexpected $undefined, expecting kEND
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  @title = "Snippets for #{@user} ; @output_buffer.concat "\n"
+                                                                                                                                                         ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:2: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "\n"
+                        ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:3: syntax error, unexpected $undefined, expecting kEND
+ @snippets.each do |s| ; @output_buffer.concat "\n"
+                                                 ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:4: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "  ";  div_for(s) do ; @output_buffer.concat "\n"
+                                                                     ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:5: syntax error, unexpected tCONSTANT, expecting kEND
+@output_buffer.concat "    Date: "; @output_buffer.concat(( s.created_at ).to_s); @output_buffer.concat " <br>\n"
+                               ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:5: syntax error, unexpected $undefined
+@output_buffer.concat "    Date: "; @output_buffer.concat(( s.created_at ).to_s); @output_buffer.concat " <br>\n"
+                                                                                                               ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:6: syntax error, unexpected tCONSTANT, expecting kEND
+@output_buffer.concat "    Title: "; @output_buffer.concat(( s.title ).to_s); @output_buffer.concat " <br>\n"
+                                ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:6: syntax error, unexpected $undefined
+@output_buffer.concat "    Title: "; @output_buffer.concat(( s.title ).to_s); @output_buffer.concat " <br>\n"
+                                                                                                           ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:7: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "\n"
+                        ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:8: unterminated string meets end of file
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:8: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_erb_app47views47users47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  @title = "Snippets for #{@user} ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ @snippets.each do |s| ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  div_for(s) do ; @output_buffer.concat "\n"
+@output_buffer.concat "    Date: "; @output_buffer.concat(( s.created_at ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "    Title: "; @output_buffer.concat(( s.title ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "    <p> "; @output_buffer.concat(( s.contents ).to_s); @output_buffer.concat " </p>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jhyland/src/snippem/app/views/users/show.html.erb:8:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:905:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/jhyland/src/snippem/app/controllers/users_controller.rb:16:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:1: syntax error, unexpected $undefined, expecting kEND
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  @title = "Snippets for #{@user} ; @output_buffer.concat "\n"
+                                                                                                                                                         ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:2: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "\n"
+                        ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:3: syntax error, unexpected $undefined, expecting kEND
+ @snippets.each do |s| ; @output_buffer.concat "\n"
+                                                 ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:4: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "  ";  div_for(s) do ; @output_buffer.concat "\n"
+                                                                     ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:5: syntax error, unexpected tCONSTANT, expecting kEND
+@output_buffer.concat "    Date: "; @output_buffer.concat(( s.created_at ).to_s); @output_buffer.concat " <br>\n"
+                               ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:5: syntax error, unexpected $undefined
+@output_buffer.concat "    Date: "; @output_buffer.concat(( s.created_at ).to_s); @output_buffer.concat " <br>\n"
+                                                                                                               ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:6: syntax error, unexpected tCONSTANT, expecting kEND
+@output_buffer.concat "    Title: "; @output_buffer.concat(( s.title ).to_s); @output_buffer.concat " <br>\n"
+                                ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:6: syntax error, unexpected $undefined
+@output_buffer.concat "    Title: "; @output_buffer.concat(( s.title ).to_s); @output_buffer.concat " <br>\n"
+                                                                                                           ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:7: syntax error, unexpected $undefined, expecting kEND
+@output_buffer.concat "\n"
+                        ^
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:8: unterminated string meets end of file
+/Users/jhyland/src/snippem/app/views/users/show.html.erb:8: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #1 of app/views/users/show.html.erb:
+1: <% @title = "Snippets for #{@user} %>
+2: 
+3: <% @snippets.each do |s| %>
+4:   <% div_for(s) do %>
+
+    app/views/users/show.html.erb:8:in `compile!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:66:in `compile'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:64:in `compile'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:26:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:135:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:164:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:158:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/users_controller.rb:16:in `show'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (38.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:46:30) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:47:09) [GET]
+  Parameters: {"id"=>"jhyland"}
+  [4;35;1mSnippet Load (0.7ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'jhyland') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/users/jhyland]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:47:11) [GET]
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:47:12) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:47:46) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:48:26) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:49:02) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:49:19) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:49:31) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:49:38) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:49:54) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:50:06) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:50:37) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:50:57) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:51:17) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:52:49) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:53:13) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:53:29) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:54:06) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:54:27) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:54:46) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:55:06) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:55:13) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:55:21) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:55:26) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:55:30) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:56:11) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:56:25) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:56:52) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:56:54) [GET]
+  [4;35;1mSnippet Load (0.5ms)[0m   [0mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:57:06) [GET]
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:57:08) [GET]
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing SnippetsController#new (for 127.0.0.1 at 2009-01-15 19:57:09) [GET]
+Rendering template within layouts/application
+Rendering snippets/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/snippets/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:57:11) [GET]
+  [4;36;1mSnippet Load (0.7ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-01-15 19:57:13) [GET]
+  Parameters: {"id"=>"mgundlach"}
+  [4;35;1mSnippet Load (0.6ms)[0m   [0mSELECT * FROM "snippets" WHERE ("snippets"."user" = 'mgundlach') ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/users/mgundlach]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-01-15 19:57:17) [GET]
+  [4;36;1mSnippet Load (0.6ms)[0m   [0;1mSELECT * FROM "snippets" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/users]

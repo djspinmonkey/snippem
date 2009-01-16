@@ -1,4 +1,4 @@
-<h1>Snippets for <%= @user %> (<%= link_to 'user index', users_url %>)</h1>
+<% @title = "Snippets for #{@user}" %>
 
 <% @snippets.each do |s| %>
   <% div_for(s) do %>

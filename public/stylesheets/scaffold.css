@@ -56,6 +56,51 @@ h1 {
   margin: 10px;
 }
 
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.title {
+  position: absolute;
+  left: 227px;
+  top: 10px;
+}
+
+.navbar {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  height: 30px;
+  width: 100%;
+  background-color: #572;
+}
+
+.navbar ul {
+  position: absolute;
+  left: 10px;
+  top: 00px;
+  line-height: 0px;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+}
+
+.navbar li a {
+  padding: 7px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+}
+
 .snippet {
   border: 1px solid;
   background-color: #ddd;

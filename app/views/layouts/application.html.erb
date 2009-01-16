@@ -4,14 +4,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Snippets: <%= controller.action_name %></title>
+  <title>Snippets: <%= @title %></title>
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
 
-<p style="color: green"><%= flash[:notice] %></p>
+  <div class="header">
+    <img src="/images/logo_extended.gif" class="logo"> 
+    <div class="title"> <h1> Snippem: <%= @title %></h1> </div>
+  </div>
 
-<%= yield  %>
+  <div class="navbar">
+    <ul class="links">
+      <li><%= link_to "blog index", users_url %></li>
+      <li><%= link_to "new snippet", new_snippet_url %></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <p style="color: green"><%= flash[:notice] %></p>
+
+    <%= yield  %>
+  </div>
 
 </body>
 </html>
