@@ -109,3 +109,7 @@ h1 {
   padding: 10px;
 }
 
+.snippet pre {
+  background-color: #ddd;
+}
+

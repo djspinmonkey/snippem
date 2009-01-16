@@ -5,7 +5,7 @@
     Date: <%= s.created_at %> <br>
     Title: <%= s.title %> <br>
 
-    <p> <%= s.contents %> </p>
+    <p> <pre><%= wrap_text(s.contents, 90) %></pre> </p>
   <% end %>
 
 <% end %>
