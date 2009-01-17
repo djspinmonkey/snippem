@@ -1,10 +1,15 @@
 <% @title = "New snippet" %>
 
+You may create new snippets by sending an email to xiocom.snippem@gmail.com or
+by entering them here.  Snippets submitted by email should show up within five
+to ten minutes.  If entered via the web form, the "user" field should be
+everything before the '@' in your email address (eg, "jhyland").
+
 <% form_for(@snippet) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :user %><br />
+    <%= f.label :user %> <br />
     <%= f.text_field :user %>
   </p>
   <p>
